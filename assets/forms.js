@@ -14,7 +14,7 @@ document.querySelectorAll('form.panel, form.sub').forEach(f => f.addEventListene
     const r = await fetch(ENDPOINT, { method: 'POST', body: d, headers: { 'Accept': 'application/json' } });
     const j = await r.json().catch(() => ({}));
     if (!r.ok || j.success === 'false' || j.success === false) throw new Error(j.message || 'Send failed');
-    if (f.classList.contains('sub')) { f.innerHTML = '<span style="color:#b9a8ff;padding:.6rem .8rem">Thank you for subscribing.</span>'; return; }
+    if (f.classList.contains('sub')) { f.innerHTML = '<span style="color:#b9a8ff;padding:.6rem .8rem">Thank you for signing up.</span>'; return; }
     f.reset(); const s = f.querySelector('.sent'); if (s) s.style.display = 'block';
     btn.textContent = 'Sent ✓';
   } catch (err) {
