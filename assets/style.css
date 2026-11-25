@@ -210,3 +210,31 @@ footer .brand{margin-bottom:1.3rem}
   .cta-band .wrap{padding:2.4rem}
   .row{grid-template-columns:1fr;padding:1.6rem}.row ul{grid-column:1}
 }
+
+/* ---- photos ---- */
+.hero-photo{border-radius:28px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 40px 80px -40px rgba(40,30,90,.55)}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.page-hero .wrap{grid-template-columns:1.05fr 1fr !important;padding:5rem 0 5rem}
+.mock-photo{position:absolute;left:50px;right:30px;top:40px;bottom:30px;border-radius:28px;overflow:hidden;box-shadow:0 40px 80px -40px rgba(40,30,90,.6)}
+.mock-photo img{width:100%;height:100%;object-fit:cover}
+.mock .mc{z-index:2}
+.mock .mc-1{left:0;top:auto;bottom:0}
+.mock .mc-2{right:-10px;top:0}
+.mock .mc-3{right:-10px;bottom:110px}
+.visual.photo{aspect-ratio:4/3.2}
+.visual.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pcard{padding:0;overflow:hidden}
+.pcard .pimg{aspect-ratio:16/10;overflow:hidden}
+.pcard .pimg img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.pcard:hover .pimg img{transform:scale(1.05)}
+.pcard .pbody{padding:2rem;display:flex;flex-direction:column;flex:1;position:relative}
+.pcard .pbody .ico{margin-top:-3.6rem;background:#fff;box-shadow:0 10px 24px -10px rgba(60,40,140,.4);position:relative}
+.insight .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.insight .thumb span{z-index:1}
+.srow{grid-template-columns:1fr 1.15fr !important;gap:3rem !important;align-items:center !important}
+.srow .simg{border-radius:20px;overflow:hidden;aspect-ratio:4/3}
+.srow .simg img{width:100%;height:100%;object-fit:cover}
+.srow:nth-child(even) .simg{order:2}
+.srow .n{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:14px;background:var(--p-soft);color:var(--p);font-weight:700;font-family:var(--head)}
+@media (max-width:1050px){.page-hero .wrap{grid-template-columns:1fr !important}.srow{grid-template-columns:1fr !important}.srow:nth-child(even) .simg{order:0}.mock-photo{left:20px;right:0}}
+@media (max-width:640px){.mock-photo{left:0;right:0;top:60px;bottom:60px}.mock .mc-3{display:none}.mock .mc-2{top:0;right:0}}
