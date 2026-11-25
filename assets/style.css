@@ -258,3 +258,5 @@ footer .brand{margin-bottom:1.3rem}
 @media (max-width:1200px){.cards-4{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:1050px){.cards-4{grid-template-columns:1fr 1fr}}
 @media (max-width:640px){.cards-4{grid-template-columns:1fr}.mission-box{padding:2.4rem}}
+
+@media (max-width:760px){.topbar{display:none}}
